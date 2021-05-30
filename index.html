@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lisandro Costa Martorel</title>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!--CSS-->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="container">
+
+            <header class="me">
+                <button  class="theme-button">   
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <img src="img/pp.jpg" alt="Lisandro Costa Martorel">
+                <h1 class="headerTitle">Lisandro Costa Martorel</h1>
+                <h2>Desarrollador web</h2>
+            </header>
+
+           
+
+            <section class="section float-on-hover">
+                <h2 class="subtitle">Acerca de mi</h2>
+                <p class="infoText">
+                    Soy desarrollador web frontend, tengo 24 años apasionado por las tecnologías y motivado por aprender todos los días algo nuevo.
+                    Siendo a su vez técnico superior en mantenimiento industrial (nivel terciario),
+                    durante la pandemia COVID19, la curiosidad y el contexto que presentó dicha situación me impulsó a incursionar en este mundo ¡que no deja de sorprenderme!
+                </p>
+            </section>
+
+            <section class="section float-on-hover">
+                <h2 class="subtitle">Experiencia</h2>
+                <ul class="infoText">
+                    <li>Técnico en mantenimiento Hospital Bicentenario Gualeguaychú <strong>2020 - Actualidad</strong></li>
+                    <li>Bourlot Ferretería Industrial <strong>2018 - 2020</strong>
+                        <p>
+                            <em>(Atención al público. Servicio Post-venta: reparación 
+                            de máquinas y herramientas eléctricas y a explosión.
+                            Redacción de mails e informes técnicos. Pedidos de 
+                            repuestos a proveedores y gestión de garantías.)</em>
+                        </p>
+                    </li>
+                    <li>Trabajos de mecánica automotriz - Taller de mecánica Exequiel Sack <strong>2017 - 2018</strong></li>
+                    <li>Trabajos de electricidad - Lizzi José Luís <strong>2016 - 2018</strong></li>
+                </ul>
+            </section>
+
+            <section class="section float-on-hover">
+                <h2 class="subtitle">Proyectos</h2>
+                <ul class="infoText">
+                    <li><a href="https://tuboleto.com.ar/">TuBoleto</a>: Realizá un contrato de compra-venta que se ajuste a todas tus necesidades al momento de negociar. (HTML, CSS, JavaScript, Bootstrap)</li>
+                    <li><a href="https://lichocosta.github.io/dog-card/">DogCard</a>: Tarjeta de presentación con sliders animados. (HTML, CSS, JQuery)</li>
+                    <li><a href="https://codepen.io/lichocosta">CodePen</a>: ¡Mirá mis prácticas y pruebas! <br class="br"> (HTML, CSS, JavaScript)</li>
+
+                </ul>
+            </section>
+
+            <section class="section float-on-hover">
+                <h2 class="subtitle">Tecnologías utilizadas</h2>
+                <div class="iconsContainer">    
+                    <p>HTML <img src="/img/html-5.png" alt="HTML logo"></p>
+                    <p>CSS <img src="/img/css3.png" alt="CSS logo"></p>
+                    <p>JavaScript <img src="/img/javascript.png" alt="JavaScript logo"></p>
+                    <p>Bootstrap <img src="/img/bootstrap.png" alt="Bootstrap logo"></p>
+                    <p>GitHub <img src="/img/github.png" alt="GitHub logo"></p>
+                </div>
+            </section>
+
+            <section class="section float-on-hover">
+                <h2 class="subtitle">Contactame</h2>
+                <div class="Contacts">
+                    <a href="mailto:lisandrocostamartorel@gmail.com" class="float-on-hover"><span class="fas fa-envelope-square"></span></a>
+                    <a href="https://www.linkedin.com/in/lisandrocosta/" class="float-on-hover"><span class="fab fa-linkedin"></span></a>
+                    <a href="https://twitter.com/Lisandr37616978" class="float-on-hover"><span class="fab fa-twitter-square"></span></a>
+                    <a href="https://www.instagram.com/lisandrocosta1/" class="float-on-hover"><span class="fab fa-instagram-square"></span></a>
+                    <a href="https://www.facebook.com/lisandro.costa.37/" class="float-on-hover"><span class="fab fa-facebook-square"></span></a>
+                    <a href="https://wa.link/92vssc" class="float-on-hover"><span class="fab fa-whatsapp-square"></span></a>
+                </div>
+            </section>
+
+            
+
+            
+        </div>
+
+        <footer>Lisandro Costa Martorel &copy;</footer>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            const themeButton = document.querySelector('.theme-button');
+            let isDark = localStorage.getItem('isDark');
+        
+            if (isDark) {
+              isDark = isDark == 'true';
+            } else {
+              isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            }
+        
+            document.body.classList.toggle('dark', isDark);
+        
+            function toggleDarkTheme() {
+              isDark = !isDark;
+              document.body.classList.toggle('dark', isDark);
+              localStorage.setItem('isDark', isDark);
+            }
+        
+            themeButton.addEventListener('click', toggleDarkTheme);
+        
+            
+          </script>
+
+    </body>
+</html>
