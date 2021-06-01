@@ -170,6 +170,10 @@ li {
     align-items: center;
 }
 
+.iconsContainer img {
+    margin: 0.5em;
+}
+
 .Contacts {
     line-height: 1.5;
     font-size: 35px;
@@ -218,6 +222,8 @@ footer {
     .Contacts a {
         margin: 0 20px;
     }
+
+
 }
 
 @media (max-width: 370px) {
