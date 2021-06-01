@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- FavIcon -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/fav.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="img/code-solid.svg">
     </head>
 
     <body>
@@ -29,19 +29,18 @@
                     <i class="fas fa-moon"></i>
                 </button>
 
-                <img src="img/1233.jpg" alt="Lisandro Costa Martorel"></img>
+                <img src="img/1000.png" alt="Lisandro Costa Martorel"></img>
                 <h1 class="headerTitle">Lisandro Costa Martorel</h1>
                 <h2>Desarrollador web</h2>
             </header>
 
-           
-
             <section class="section float-on-hover">
                 <h2 class="subtitle">Acerca de mi</h2>
                 <p class="infoText">
-                    Tengo 24 años y vivo en Gualeguaychú, Entre Ríos. <br> 
-                    Soy Técnico Superior en Manteniento Industrial con gusto por experimentar creando proyectos en la web. <br> Me apasionan las tecnologías en general y me motiva aprender todos los días algo nuevo. <br>
-                    Actualmente busco mi primer experiancia laboral, que me permita aportar todos mis conocimientos y desarrollarme profesionalmente.
+                    <p class="paragraph">Tengo 24 años y vivo en Gualeguaychú, Entre Ríos, Argentina.</p>
+                    <p class="paragraph">Soy Técnico Superior en Manteniento Industrial pero mi curiosidad me llevó a convertirme en desarrollador web.</p>
+                    <p class="paragraph">Me apasiona la tecnología y aprender cosas nuevas.</p>
+                    <p class="paragraph">Estoy abierto a nuevas oportunidades laborales en el campo y si no puedo resolver algo, estoy dispuesto a aprenderlo.</p>
                 </p>
             </section>
 
@@ -95,9 +94,6 @@
                 </div>
             </section>
 
-            
-
-            
         </div>
 
         <footer>Lisandro Costa Martorel &copy;</footer>
@@ -107,24 +103,19 @@
         <script>
             const themeButton = document.querySelector('.theme-button');
             let isDark = localStorage.getItem('isDark');
-        
             if (isDark) {
               isDark = isDark == 'true';
             } else {
               isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             }
-        
             document.body.classList.toggle('dark', isDark);
-        
             function toggleDarkTheme() {
               isDark = !isDark;
               document.body.classList.toggle('dark', isDark);
               localStorage.setItem('isDark', isDark);
             }
-        
             themeButton.addEventListener('click', toggleDarkTheme);
-        
-            
+
           </script>
 
     </body>

@@ -123,7 +123,6 @@ a {
 }
 
 .section:hover {
-    /*box-shadow: 0px 1px 7px 3px var(--shadow-color);*/
     box-shadow: 0px 15px 30px 0px var(--shadow-color);
     border-radius: 10px;
 }
@@ -138,6 +137,11 @@ a {
     line-height: 1.5;
     font-size: 18px;
     color: var(--text-color);
+}
+
+.paragraph{
+    margin: 15px 0 15px 0;
+    font-size: 18px;
 }
 
 ul {
@@ -164,10 +168,6 @@ li {
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
-}
-
-.iconsContainer img {
-    margin-left: 0.5em;
 }
 
 .Contacts {
@@ -206,24 +206,25 @@ footer {
 
 /*-----------------------------------MEDIA QUERIES---------------------------------*/
 
-@media (min-width: 320px) and (max-width: 460px) {
+@media (max-width: 460px) {
     :root{
-        --div-width: 350px;
+        --div-width: 360px;
     }
     .iconsContainer p {
         display: block;
+        margin: 8px;
     }
-    .br {
-        display: none;
-    }
+
     .Contacts a {
         margin: 0 20px;
     }
 }
 
-@media (min-width: 120px) and (max-width: 360px) {
+@media (max-width: 370px) {
     :root{
-        --div-width: 250px;
+        --div-width: 280px;
+        --img-height: 220px;
+        --img-width: 220px;
     }
     .iconsContainer p {
         display: block;
@@ -231,4 +232,35 @@ footer {
     }
 }
 
+@media (max-width: 330px) {
+    :root{
+        --div-width: 270px;
+    }
+
+    .iconsContainer p {
+        display: block;
+        padding: 0;
+    }
+}
+
+@media (max-width: 280px) {
+    :root{
+        --div-width: 240px;
+        --img-height: 180px;
+        --img-width: 180px;
+    }
+
+    .iconsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        text-align: center;
+    }
+
+    .iconsContainer p {
+        display: block;
+        padding: 0;
+        margin: 10px;
+    }
+}
 
