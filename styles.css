@@ -223,7 +223,9 @@ footer {
         margin: 0 20px;
     }
 
-
+    .section {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 370px) {
@@ -236,6 +238,10 @@ footer {
         display: block;
         padding: 0;
     }
+
+    .section {
+        padding: 10px;
+    }
 }
 
 @media (max-width: 330px) {
@@ -246,6 +252,10 @@ footer {
     .iconsContainer p {
         display: block;
         padding: 0;
+    }
+
+    .section {
+        padding: 10px;
     }
 }
 
@@ -267,6 +277,10 @@ footer {
         display: block;
         padding: 0;
         margin: 10px;
+    }
+
+    .section {
+        padding: 10px;
     }
 }
 
