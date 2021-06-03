@@ -93,14 +93,6 @@ body {
     text-align: center;
 }
 
-hr {
-    margin: 50px auto 50px auto;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px var(--text-color);
-}
-
-
 a {
     text-decoration: none;
     color: var(--link-color);
