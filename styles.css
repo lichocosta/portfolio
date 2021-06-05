@@ -274,5 +274,9 @@ footer {
     .section {
         padding: 10px;
     }
+
+    .headerTitle {
+        line-height: 1.5;
+    }
 }
 
