@@ -12,7 +12,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 /* Otherwise just put the config content (json): */
 
 var color = '#75A5B7';
-var maxParticles = 40;
+var maxParticles = 50;
 
 // ParticlesJS Config.
 particlesJS('particles-js', {
@@ -21,7 +21,7 @@ particlesJS('particles-js', {
       'value': maxParticles,
       'density': {
         'enable': true,
-        'value_area': (maxParticles * 20) * 3
+        'value_area': (maxParticles * 15) * 3
       }
     },
     'color': {
@@ -66,7 +66,7 @@ particlesJS('particles-js', {
     },
     'move': {
       'enable': true,
-      'speed': 2,
+      'speed': 5,
       'direction': 'none',
       'random': false,
       'straight': false,
