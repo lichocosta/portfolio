@@ -44,6 +44,7 @@
         ￣￣￣￣￣￣￣
     -->
     <body>
+        <div id="particles-js"></div>
         <div class="container">
 
             <header class="me">
@@ -71,7 +72,8 @@
             <section class="section float-on-hover">
                 <h2 class="subtitle">Experience</h2>
                 <ul class="infoText">
-                    <li>Maintenance Technician Hospital Bicentennial Gualeguaychú from <strong>2020 - to the present</strong>.</li>
+                    <li>Frontend Web Developer in Rebrit SRL <strong>July 2021 - Present</strong>.</li>
+                    <li>Maintenance Technician Hospital Bicentennial Gualeguaychú from <strong>2020 - 2021</strong>.</li>
                     <li>Bourlot Industrial Hardware <strong>2018 - 2020</strong>.
                         <p>
                             <em>(Shop assistant. After-sale services: the reparation of electric and of explosion machines and tools. Drafting of emails and technical reports. In charge of spare parts supplying orders and warranty management).</em>
@@ -97,9 +99,10 @@
                 <div class="iconsContainer">    
                     <p>HTML <img src="/img/html-5.png" alt="HTML logo"></p>
                     <p>CSS <img src="/img/css3.png" alt="CSS logo"></p>
-                    <p>JavaScript <img src="/img/javascript.png" alt="JavaScript logo"></p>
                     <p>Bootstrap <img src="/img/bootstrap.png" alt="Bootstrap logo"></p>
                     <p>GitHub <img src="/img/github.png" alt="GitHub logo"></p>
+                    <p>Git <img src="/img/git.png" alt="Git logo"></p>
+                    <p>JavaScript <img src="/img/javascript.png" alt="JavaScript logo"></p>
                 </div>
             </section>
 
@@ -119,8 +122,10 @@
 
         <footer>Lisandro Costa Martorel &copy;</footer>
         
+        <!-- FontAwesome -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+        <!-- DarkMode Switch -->
         <script>
             const themeButton = document.querySelector('.theme-button');
             let isDark = localStorage.getItem('isDark');
@@ -137,7 +142,14 @@
             }
             themeButton.addEventListener('click', toggleDarkTheme);
 
-          </script>
+        </script>
+
+        <!-- ParticlesJS -->
+        <script src="particles.js/particles.js-master/particles.js"></script>
+        <script src="particles.js/particles.js-master/demo/js/lib/stats.js"></script>
+        <script src="particles.js/particles.js-master/demo/js/app.js"></script>
+
+
 
     </body>
 </html>
