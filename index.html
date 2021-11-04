@@ -55,7 +55,7 @@
 
                 <img src="img/1000.png" alt="Lisandro Costa Martorel"></img>
                 <h1 class="headerTitle">Lisandro Costa Martorel</h1>
-                <h2>Web developer</h2>
+                <h2><span class="typed"></span></h2>
             </header>
 
             <section class="section float-on-hover">
@@ -140,6 +140,28 @@
               localStorage.setItem('isDark', isDark);
             }
             themeButton.addEventListener('click', toggleDarkTheme);
+        </script>
+
+        <!-- TypedJS -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            const typed = new Typed('.typed', {
+                strings: [
+                    'Web developer'
+                ],
+                stringsElement: '#cadenas-texto',
+                typeSpeed: 75,
+                startDelay: 300,
+                backSpeed: 75,
+                smartBackspace: true,
+                shuffle: false, 
+                backDelay: 1600, 
+                loop: true, 
+                loopCount: false,
+                showCursor: true,
+                cursorChar: '!',
+                contentType: 'html',
+            });
         </script>
 
         <!-- ParticlesJS -->
