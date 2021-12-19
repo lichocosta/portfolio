@@ -181,6 +181,10 @@ li {
     margin: 0.5em;
 }
 
+.marginBoot {
+    margin: 5px 5px 5px 15px !important;
+}
+
 .Contacts {
     line-height: 1.5;
     font-size: 35px;
@@ -202,8 +206,26 @@ li {
     transition-timing-function: ease-out;
 }
 
-.float-on-hover:hover, .float-on-hover:focus, .float-on-hover:active {
+.float-on-hover:hover {
     transform: translateY(-10px);
+}
+.fa-envelope-square:hover {
+    color: #d93025;
+}
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+.fa-twitter-square:hover {
+    color: #00acee;
+}
+.fa-instagram-square:hover {
+    color: #E1306C;
+}
+.fa-facebook-square:hover {
+    color: #4267B2;
+}
+.fa-whatsapp-square:hover {
+    color: #4FCE5D;
 }
 
 footer {
