@@ -148,13 +148,12 @@ a {
 }
 
 .section {
-    /* background-color: rgba(0, 0, 0, 0.02); */
     text-align: left;
     align-items: center;
     justify-content: center;
-    margin: 50px auto 50px auto;
+    margin: 50px auto;
     display: block;
-    padding: 20px;
+    padding: 24px;
     border: solid 2px var(--color-dark);
     transition-duration: 1.5s;
 }
@@ -181,7 +180,7 @@ a {
 }
 
 .paragraph{
-    margin: 15px 0 15px 0;
+    margin: 15px 0;
     font-size: 18px;
 }
 
@@ -190,7 +189,7 @@ ul {
 }
 
 li {
-    margin: 12px;
+    margin: 14px 0;
 }
 
 .iconsContainer {
@@ -227,7 +226,7 @@ li {
 .Contacts a {
     display: inline-block;
     line-height: 20px;
-    margin: 0 15px;
+    margin: 0 14px;
     color: var(--color-dark);
 }
 
