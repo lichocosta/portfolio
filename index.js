@@ -1,5 +1,4 @@
 //-------------DARK-MODE-------------//
-
 const themeButton = document.querySelector('.theme-button');
 let isDark = localStorage.getItem('isDark');
 if (isDark) {
@@ -16,7 +15,6 @@ function toggleDarkTheme() {
 themeButton.addEventListener('click', toggleDarkTheme);
 
 //-------------LENGUAGE-------------//
-
 const lenguageButton = document.querySelector('.lenguage-button');
 
 const englishElements = document.body.querySelectorAll('[lang="en"]');
@@ -35,3 +33,15 @@ function changeLenguage() {
     });
 }
 lenguageButton.addEventListener('click', changeLenguage);
+
+//-------------AGE-------------//
+function getAge(dateString) {
+    const today = new Date();
+    const birthDate = new Date(dateString);
+    let age = today.getFullYear() - birthDate.getFullYear();
+    let m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
+    return age;
+}
+document.querySelectorAll('.age')[0].textContent = getAge('1997/04/07');
+document.querySelectorAll('.age')[1].textContent = getAge('1997/04/07');
