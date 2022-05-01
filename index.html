@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lisandro Costa Martorel</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="styles.css">
-        <link rel="shortcut icon" type="image/x-icon" href="img/code-solid.svg">
-    </head>
 
-    <!-- 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lisandro Costa Martorel</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="card.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/code-solid.svg">
+</head>
 
-                    ZZZ
+<!-- 
+
+                  ZZZ
          _＜⌒/ヽ-､____
         /＜_/________/
         ￣￣￣￣￣￣￣
@@ -35,160 +37,514 @@
         /＜_/________/
         ￣￣￣￣￣￣￣
     -->
-    <body>
-        <div id="particles-js"></div>
-        <main id="container" class="container">
-            <header class="header">
-                <button class="sideButtons theme-button">   
-                    <i class="fas fa-sun"></i>
-                    <i class="fas fa-moon"></i>
-                </button>
-                <button class="sideButtons lenguage-button">
-                    <img lang="es" src="img/uk.svg" alt="Inglés">
-                    <img lang="en" src="img/es.svg" alt="Español">
-                </button>
 
-                <img class="me" src="img/SD.jpg" alt="Lisandro Costa Martorel"></img>
-                <h1 class="headerTitle">Lisandro Costa Martorel</h1>
-                <h2 lang="en">Web developer</h2>
-                <h2 lang="es">Desarrollador web</h2>
-            </header>
+<body>
+  <div id="particles-js"></div>
+  
+  <main>
+    <section>
+      <header class="header">
+        <button class="sideButtons theme-button">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="sideButtons lenguage-button">
+          <img lang="es" src="img/uk.svg" alt="Inglés">
+          <img lang="en" src="img/es.svg" alt="Español">
+        </button>
+  
+        <img class="me" src="img/SD.jpg" alt="Lisandro Costa Martorel"></img>
+        <h1 class="headerTitle">Lisandro Costa Martorel</h1>
+        <h2 lang="en">Web Developer</h2>
+        <h2 lang="es">Desarrollador Web</h2>
+      </header>
+    </section>
+    
+    <section>
+      <h2 lang="en" class="subtitle">About me</h2>
+      <div lang="en" class="reveal fade-left glassStyle">
+        <p class="infoText">
+          <p class="paragraph">I'm <span class="age">25</span> years old and I'm a self-taught web developer from Argentina</p>
+          <p class="paragraph">I currently live in Fisciano, Salerno, Italy.</p>
+          <p class="paragraph">I like to learn by doing. I enjoy solving problems with web applications.</p>
+          <p class="paragraph">I'm passionate in technology and in learning new things.</p>
+          <p class="paragraph">My main goal is to become a full-stack developer.</p>
+          <p class="paragraph">Maybe I don't know it, but I can learn it.</p>
+        </p>
+      </div>
+      <h2 lang="es" class="subtitle">Acerca de mí</h2>
+      <div lang="es" class="reveal fade-left glassStyle">
+        <p class="infoText">
+          <p class="paragraph">Tengo <span class="age">25</span> años y soy un desarrollador web autodidacta argentino.</p>
+          <p class="paragraph">Actualmente vivo en Fisciano, Salerno, Italia.</p>
+          <p class="paragraph">Me gusta aprender haciendo. Disfruto resolver problemas con aplicaciones web.</p>
+          <p class="paragraph">Me apasiona la tecnología y aprender cosas nuevas.</p>
+          <p class="paragraph">Mi objetivo principal es convertirme en un desarrollador full-stack.</p>
+          <p class="paragraph">Puede que no lo sepa, pero sé que lo puedo aprender.</p>
+        </p>
+      </div>
+    </section>
 
-            <section lang="en" class="section float-on-hover">
-                <h2 class="subtitle">About me</h2>
-                <p class="infoText">
-                    <p class="paragraph">I'm <span class="age">25</span> years old and I'm Argentine.</p>
-                    <p class="paragraph">I currently live in Fisciano, Salerno, Italy.</p>
-                    <p class="paragraph">I'm passionate in technology and in learning new things.</p>
-                    <p class="paragraph">I'm open to new job opportunities, I like challenges and problem solving.</p>
-                    <p class="paragraph">Maybe I don't know it, but I can learn it.</p>
-                </p>
-            </section>
-            <section lang="es" class="section float-on-hover about-me">
-                <h2 class="subtitle">Acerca de mí</h2>
-                <p class="infoText">
-                    <p class="paragraph">Tengo <span class="age">25</span> años y soy Argentino.</p>
-                    <p class="paragraph">Actualmente vivo en Fisciano, Salerno, Italia.</p>
-                    <p class="paragraph">Me apasiona la tecnología y aprender cosas nuevas.</p>
-                    <p class="paragraph">Estoy abierto a nuevas oportunidades laborales, me gustan los desafíos y resolver problemas.</p>
-                    <p class="paragraph">Puede que no lo sepa, pero sé que lo puedo aprender.</p>
-                </p>
-            </section>
-            
-            <section lang="en" class="section float-on-hover">
-                <h2 class="subtitle">Experience</h2>
-                <ul class="infoText">
-                    <li>Frontend Web Developer in Rebrit SRL <strong>July 2021 - Present</strong>.
-                        <p>
-                            (Development and modification of multiplatform projects in the Fintech sector) <br>
-                            <em>    
-                                - Pixel Perfect layout using HTML5 and CSS3. <br>
-                                - Responsive design with a “mobile first” approach using Bootstrap 4/5. <br>
-                                - Code refactoring. <br>
-                                - Low complexity tasks in Backend with PHP and MySQL. <br>    
-                            </em>
-                        </p>
-                    </li>
-                    <li>Maintenance Technician Hospital Bicentennial Gualeguaychú from <strong>2020 - 2021</strong>.</li>
-                    <li>Bourlot Industrial Hardware <strong>2018 - 2020</strong>.
-                        <p>
-                            <em>(Shop assistant. After-sale services: the reparation of electric and of explosion machines and tools. Drafting of emails and technical reports. In charge of spare parts supplying orders and warranty management).</em>
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section lang="es" class="section float-on-hover">
-                <h2 class="subtitle">Experiencia</h2>
-                <ul class="infoText">
-                    <li>Frontend Web Developer en Rebrit SRL <strong>Julio 2021 - Actualidad</strong>.
-                        <p>
-                            (Desarrollo y modificación de proyectos multiplataforma en el sector Fintech) <br>
-                            <em>    
-                                - Maquetación Pixel Perfect utilizando HTML5 y CSS3. <br>
-                                - Responsive design con enfoque “mobile first” usando Bootstrap 4/5. <br>
-                                - Refactorización de código. <br>
-                                - Tareas de baja complejidad en Backend con PHP y MySQL. <br>    
-                            </em>
-                        </p>
-                    </li>
-                    <li>Técnico en mantenimiento Hospital Bicentenario Gualeguaychú <strong>2020 - 2021</strong></li>
-                    <li>Bourlot Ferretería Industrial <strong>2018 - 2020</strong>
-                        <p>
-                            <em>(Atención al público. Servicio Post-venta: reparación de máquinas y herramientas eléctricas y a explosión. Redacción de mails e informes técnicos. Pedidos de repuestos a proveedores y gestión de garantías.)</em>
-                        </p>
-                    </li>
-                </ul>
-            </section>
+    <section class="d-block reveal fade-bottom">
+      <h2 lang="en" class="subtitle">Projects</h2>
+      <h2 lang="es" class="subtitle">Proyectos</h2>
+      <ul class="auto-grid">
 
-            <section lang="en" class="section float-on-hover">
-                <h2 class="subtitle">Projects</h2>
-                <ul class="infoText">
-                    <li><a target="_blank" href="https://lichocosta.github.io/calculator/">Calculator</a>: With this website you can calculate the cost of each quota without the need for a digital calculator.<br>(HTML, CSS, JavaScript, Bootstrap)</li>
-                    <li><a target="_blank" href="https://tuboleto.com.ar/">TuBoleto</a>: Make a purchase-sale contract that includes the and main characteristics of the article on sale and the payment conditions.<br>(HTML, CSS, JavaScript, Bootstrap)</li>
-                    <li><a target="_blank" href="https://lichocosta.github.io/pixelart-dashboard/">PixelArt Dashboard</a>: A simple dashboard built using APIs and JavaScript.<br>(HTML, CSS, JavaScript, Bootstrap)</li>
-                    <li><a target="_blank" href="https://lichocosta.github.io/MovieAPI/">Movie API</a>: Popular movies fetched by API from themoviedb.org.<br>(HTML, CSS, JavaScript)</li>
-                    <li><a target="_blank" href="https://javascript-fullstack-licho.herokuapp.com/">FullstackBookApp</a>: A simple full-stack CRUD application for books.<br>(HTML, CSS, JavaScript, Bootstrap, NodeJS, MongoDB, Git, Heroku)</li>
-                    <li><a target="_blank" href="https://lichocosta.github.io/dog-card/">DogCard</a>: Business card with animated sliders.<br>(HTML, CSS, JQuery)</li>
-                    <li><a target="_blank" href="https://codepen.io/lichocosta">CodePen</a>: Look at my practices and tests!<br>(HTML, CSS, JavaScript)</li>
-                </ul>
-            </section>
-            <section lang="es" class="section float-on-hover">
-                <h2 class="subtitle">Proyectos</h2>
-                <ul class="infoText">
-                    <li><a target="_blank" href="https://lichocosta.github.io/calculator/">Calculator</a>: Con esta web podrás calcular el costo de cada cuota sin necesidad de una calculador digital.<br>(HTML, CSS, JavaScript, Bootstrap)</li>
-                    <li><a target="_blank" href="https://tuboleto.com.ar/">TuBoleto</a>: Realizá un contrato de compra-venta que se ajuste a todas tus necesidades al momento de negociar.<br>(HTML, CSS, JavaScript, Bootstrap)</li>
-                    <li><a target="_blank" href="https://lichocosta.github.io/pixelart-dashboard/">PixelArt Dashboard</a>: Un simple panel de información construido mediante uso de APIs y JavaScript.<br>(HTML, CSS, JavaScript, Bootstrap)</li>
-                    <li><a target="_blank" href="https://lichocosta.github.io/MovieAPI/">Movie API</a>: Películas populares obtenidas por API de themoviedb.org.<br>(HTML, CSS, JavaScript)</li>
-                    <li><a target="_blank" href="https://javascript-fullstack-licho.herokuapp.com/">FullstackBookApp</a>: Una simple aplicación CRUD fullstack para libros.<br>(HTML, CSS, JavaScript, Bootstrap, NodeJS, MongoDB, Git, Heroku)</li>
-                    <li><a target="_blank" href="https://lichocosta.github.io/dog-card/">DogCard</a>: Tarjeta de presentación con sliders animados.<br>(HTML, CSS, JQuery)</li>
-                    <li><a target="_blank" href="https://codepen.io/lichocosta">CodePen</a>: ¡Mirá mis prácticas y pruebas!<br>(HTML, CSS, JavaScript)</li>
-                </ul>
-            </section>
+        <li>
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/todo.png)"></div>
+              <ul class="details">
+                <li class="author">
+                  <a target="_blank" href="https://to-do-list-react-two.vercel.app/">Demo</a>
+                </li>
+                <li class="date">
+                  <a target="_blank" href="https://github.com/lichocosta/to-do-list-react">GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>To do list</h3>
+                <p>Made with React components and states and also ChakraUI for aesthetics, as a practice for the freeCodeCamp ReactJS course.</p>
+              </div>
+              <div lang="es">
+                <h3>Lista de tareas</h3>
+                <p>Realizada con componentes y estados de React y además de ChakraUI para estética, como práctica del curso de ReactJS de freeCodeCamp.</p>
+              </div>
+              <ul class="tags">
+                <li>ReactJS</li>
+                <li>ChakraUI</li>
+              </ul>
+            </div>
+          </div>
+        </li>
 
-            <section class="section float-on-hover">
-                <h2 lang="en" class="subtitle">Skills</h2>
-                <h2 lang="es" class="subtitle">Habilidades</h2>
-                <div class="iconsContainer">    
-                    <p class="tecno">HTML<img src="/img/html-5.png" alt="HTML logo"></p>
-                    <p class="tecno">CSS<img src="/img/css3.png" alt="CSS logo"></p>
-                    <p class="tecno">Bootstrap<img class="marginBoot" src="/img/bootstrap5.svg" alt="Bootstrap logo"></p>
-                    <a class="tecno" target="_blank" href="https://github.com/lichocosta">GitHub<img src="/img/github.png" alt="GitHub logo"></a>
-                    <p class="tecno">Git<img src="/img/git.png" alt="Git logo"></p>
-                    <p class="tecno">JavaScript<img src="/img/javascript.png" alt="JavaScript logo"></p>
-                </div>
-            </section>
+        <li>
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/casio.png)"></div>
+              <ul class="details">
+                <li class="author">
+                  <a target="_blank" href="https://casio-calculator.vercel.app/">Demo</a>
+                </li>
+                <li class="date">
+                  <a target="_blank" href="https://github.com/lichocosta/casio-calculator">GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>Casio Calculator</h3>
+                <p>Functional calculator made with React components and with a CSS style oriented to "Casio Calculator" as practice of the freeCodeCamp ReactJS course.</p>
+              </div>
+              <div lang="es">
+                <h3>Calculadora Casio</h3>
+                <p>Calculadora funcional realizada con componentes de React y con un estilo CSS orientado a "Calculadora Casio" como práctica del curso de ReactJS de freeCodeCamp.</p>
+              </div>
+              <ul class="tags">
+                <li>ReactJS</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+        </li>
 
-            <section class="section float-on-hover">
-                <h2 lang="en" class="subtitle">Contact me</h2>
-                <h2 lang="es" class="subtitle">Contactame</h2>
-                <div class="Contacts">
-                    <a target="_blank" href="mailto:lisandrocostamartorel@gmail.com" class="float-on-hover">
-                        <i class="fas fa-envelope-square"></i>
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/lisandrocosta/" class="float-on-hover">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a target="_blank" href="https://twitter.com/Lisandr37616978" class="float-on-hover">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                    <a target="_blank" href="https://www.instagram.com/lisandrocosta1/" class="float-on-hover">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
-                    <a target="_blank" href="https://www.facebook.com/lisandro.costa.37/" class="float-on-hover">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a target="_blank" href="https://wa.link/92vssc" class="float-on-hover">
-                        <i class="fab fa-whatsapp-square"></i>
-                    </a>
-                </div>
-            </section>
-        </main>
+        <li>
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/click.png)"></div>
+              <ul class="details">
+                <li class="author">
+                  <a target="_blank" href="https://click-counter-gamma.vercel.app/">Demo</a>
+                </li>
+                <li class="date">
+                  <a target="_blank" href="https://github.com/lichocosta/click-counter">GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>Click Counter</h3>
+                <p>Counter made with components and states, as practice of the freeCodeCamp ReactJS course.</p>
+              </div>
+              <div lang="es">
+                <h3>Contador de clicks</h3>
+                <p>Contador realizado con componentes y estados, como práctica del curso de ReactJS de freeCodeCamp.</p>
+              </div>
+              <ul class="tags">
+                <li>ReactJS</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+        </li>
 
-        <footer>Lisandro Costa Martorel &copy;</footer>
+        <li>
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/guitar.png)"></div>
+              <ul class="details">
+                <li class="author">
+                  <a target="_blank" href="https://free-guitar-camp.vercel.app/">Demo</a>
+                </li>
+                <li class="date">
+                  <a target="_blank" href="https://github.com/lichocosta/freeGuitarCamp">GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>freeGuitarCamp</h3>
+                <p>Clone of a section of the freeCodeCamp website as a practice for their ReactJS course.</p>
+              </div>
+              <div lang="es">
+                <h3>freeGuitarCamp</h3>
+                <p>Clon de una sección de la web de freeCodeCamp como práctica de su curso de ReactJS.</p>
+              </div>
+              <ul class="tags">
+                <li>ReactJS</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/react-api.gif)"></div>
+              <ul class="details">
+                <li class="author">
+                  <a target="_blank" href="https://react-spacex-api.vercel.app/">Demo</a>
+                </li>
+                <li class="date">
+                  <a target="_blank" href="https://github.com/lichocosta/react-api">GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>SpaceX Missions</h3>
+                <p>Web with information on all SpaceX space missions using its API, stylized with ChakraUI.</p>
+              </div>
+              <div lang="es">
+                <h3>Misiones SpaceX</h3>
+                <p>Web con información de todas las misiones espaciales de SpaceX utilizando su API, estilizada con ChakraUI.</p>
+              </div>
+              <ul class="tags">
+                <li>ReactJS</li>
+                <li>React Router</li>
+                <li>ChakraUI</li>
+                <li>Vite</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/calcu.gif)"></div>
+              <ul class="details">
+                <li class="author">
+                  <a target="_blank" href="https://lichocosta.github.io/calculator/">Demo</a>
+                </li>
+                <li class="date">
+                  <a target="_blank" href="https://github.com/lichocosta/calculator">GitHub</a>
+                </li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>Quotas Calculator</h3>
+                <p>With this website you can calculate the cost of each installment without the need for a digital calculator. A very important challenge for me since it is a project made with JavaScript Vanilla.</p>
+              </div>
+              <div lang="es">
+                <h3>Calculador de cuotas</h3>
+                <p>Con esta web podrás calcular el costo de cada cuota sin necesidad de una calculador digital. Un desafío muy importante para mí ya que se trata de un proyecto realizado con JavaScript Vanilla.</p>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/boleto.gif)"></div>
+              <ul class="details">
+                <li class="author"><a target="_blank" href="https://tuboleto.com.ar/">Demo</a></li>
+                <li class="date"><a target="_blank" href="https://github.com/lichocosta/boleto-compra-venta">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>TuBoleto</h3>
+                <p>This was my first web project, with very basic knowledge in HTML, CSS and JS, with it you can make a purchase-sale contract that fits all your needs when negotiating, which has helped many people.</p>
+              </div>
+              <div lang="es">
+                <h3>TuBoleto</h3>
+                <p>Este fue mi primer proyecto web, con conocimientos muy básicos en HTML, CSS y JS, con él puedes realizar un contrato de compra-venta que se ajuste a todas tus necesidades al momento de negociar, el cual ha ayudado a muchas personas.</p>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/dashboard.gif)"></div>
+              <ul class="details">
+                <li class="author"><a target="_blank" href="https://lichocosta.github.io/pixelart-dashboard/">Demo</a></li>
+                <li class="date"><a target="_blank" href="https://github.com/lichocosta/pixelart-dashboard">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>PixelArt Dashboard</h3>
+                <p>A "Pixel Art" style overview dashboard built using "CoinGecko", "Open Weather Map" APIs and JavaScript.</p>
+              </div>
+              <div lang="es">
+                <h3>Panel PixelArt</h3> 
+                <p>Un panel de información general con estilo "Pixel Art" construido mediante uso de APIs "CoinGecko", "Open Weather Map" y JavaScript.</p>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
+        </li>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="particles-copy.js"></script>
-        <script src="app.js"></script>
-        <script src="index.js"></script>
-    </body>
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/movie.png)"></div>
+              <ul class="details">
+                <li class="author"><a target="_blank" href="https://lichocosta.github.io/MovieAPI/">Demo</a></li>
+                <li class="date"><a target="_blank" href="https://github.com/lichocosta/MovieAPI">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>Movie API</h3>
+                <p>Website with popular movies fetched by API from themoviedb.org.</p>
+              </div>
+              <div lang="es">
+                <h3>API de películas</h3>
+                <p>Sitio web con películas populares obtenidas por API de themoviedb.org.</p>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+  
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/book.png)"></div>
+              <ul class="details">
+                <li class="author"><a target="_blank" href="https://javascript-fullstack-licho.herokuapp.com/">Demo</a></li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>FullstackBookApp</h3>
+                <p>A full-stack CRUD application with a book theme, it helped me a lot to learn and get to know both backend and frontend.</p>
+              </div>
+              <div lang="es">
+                <h3>FullstackBookApp</h3>
+                <p>Una aplicación tipo CRUD (ABM) full-stack con temática libros, me sirvió mucho para aprender y conocer tanto de backend como de frontend.</p>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>NodeJS</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+                <li>Heroku</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/dogs.png)"></div>
+              <ul class="details">
+                <li class="author"><a target="_blank" href="https://lichocosta.github.io/dog-card/">Demo</a></li>
+                <li class="date"><a target="_blank" href="https://github.com/lichocosta/dog-card">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>DogCard</h3>
+                <p>Business card with animated sliders with information about dogs.</p>
+              </div>
+              <div lang="es">
+                <h3>DogCard</h3>
+                <p>Tarjeta de presentación con sliders animados con información sobre perros.</p>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JQuery</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+        <li class="d-none">
+          <div class="blog-card">
+            <div class="meta">
+              <div class="photo" style="background-image: url(/img/screens/codepen.png)"></div>
+              <ul class="details">
+                <li class="author"><a target="_blank" href="https://codepen.io/lichocosta/">CodePen</a></li>
+              </ul>
+            </div>
+            <div class="description">
+              <div lang="en">
+                <h3>CodePen</h3>
+                <p>Look at my practices and tests!</p>
+              </div>
+              <div lang="es">
+                <h3>CodePen</h3>
+                <p>¡Mirá mis prácticas y pruebas!</p>
+              </div>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      
+      </ul>
+
+      <div class="btnShow">
+        <button id="showAllButton">
+          <span lang="en">Rain of projects!</span>
+          <span lang="es">¡Lluvia de proyectos!</span>
+        </button>
+      </div>
+    </section>
+
+
+    <section>
+      <h2 lang="en" class="subtitle">Experience</h2>
+      <div lang="en" class="reveal fade-left glassStyle">
+        <ul class="infoText">
+          <li>Frontend Web Developer in Rebrit SRL <strong>July 2021 - Present</strong>.
+            <p class="my-16">
+              (Development and modification of multiplatform projects in the Fintech sector)
+              <ul class="ms-16"> 
+                <li><em>- Pixel Perfect layout using HTML5 and CSS3.</em></li>
+                <li><em>- Responsive design with a “mobile first” approach using Bootstrap 4/5.</em></li>
+                <li><em>- Code refactoring.</em></li>
+                <li><em>- Low complexity tasks in Backend with PHP and MySQL.</em></li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </div>
+      <h2 lang="es" class="subtitle">Experiencia</h2>
+      <div lang="es" class="reveal fade-left glassStyle">
+        <ul class="infoText">
+          <li>Frontend Web Developer en Rebrit SRL <strong>Julio 2021 - Actualidad</strong>.
+            <p class="my-16">
+              (Desarrollo y modificación de proyectos multiplataforma en el sector Fintech)
+              <ul class="ms-16"> 
+                <li><em>- Maquetación Pixel Perfect utilizando HTML5 y CSS3.</em></li>
+                <li><em>- Responsive design con enfoque “mobile first” usando Bootstrap 4/5.</em></li>
+                <li><em>- Refactorización de código.</em></li>
+                <li><em>- Tareas de baja complejidad en Backend con PHP y MySQL.</em></li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </div>
+      
+      <h2 lang="en" class="subtitle">Skills</h2>
+      <h2 lang="es" class="subtitle">Habilidades</h2>
+      <div class="reveal fade-right skills glassStyle">
+        <div class="iconsContainer">
+          <p class="tecno">HTML<img class="float-on-hover" src="/img/skills/html-5.png" title="HTML" alt="HTML logo"></p>
+          <p class="tecno">CSS<img class="float-on-hover" src="/img/skills/css3.png" title="CSS" alt="CSS logo"></p>
+          <p class="tecno">JavaScript<img class="float-on-hover" src="/img/skills/javascript.png" title="JavaScript" alt="JavaScript logo"></p>
+          <p class="tecno">Bootstrap<img class="float-on-hover" src="/img/skills/bootstrap5.svg" title="Bootstrap" alt="Bootstrap logo"></p>
+          <p class="tecno">Sass<img class="float-on-hover pt-5" src="/img/skills/sass.png" title="Sass" alt="Sass logo"></p>
+          <p class="tecno">React<img class="float-on-hover" src="/img/skills/react.png" title="React" alt="React logo"></p>
+          <p class="tecno">ChakraUI<img class="float-on-hover p-3" src="/img/skills/chakra.svg" title="ChakraUI" alt="ChakraUI logo"></p>
+          <a class="tecno githubLink" target="_blank" href="https://github.com/lichocosta">
+            GitHub
+            <img class="float-on-hover" src="/img/skills/github.png" title="GitHub" alt="GitHub logo">
+          </a>
+          <p class="tecno">GitLab<img class="float-on-hover p-3" src="/img/skills/gitlab.png" title="GitLab" alt="GitLab logo"></p>
+          <p class="tecno">Git<img class="float-on-hover" src="/img/skills/git.png" title="Git" alt="Git logo"></p>
+          <p class="tecno iconsOpacity">MongoDB<img class="float-on-hover" src="/img/skills/mongo.png" title="MongoDB" alt="MongoDB logo"></p>
+          <p class="tecno iconsOpacity">MySQL<img class="float-on-hover p-3" src="/img/skills/mysql.png" title="MySQL" alt="MySQL logo"></p>
+          <p class="tecno iconsOpacity">NodeJS<img class="float-on-hover p-3" src="/img/skills/node.png" title="NodeJS" alt="NodeJS logo"></p>
+          <p class="tecno iconsOpacity">PHP<img class="float-on-hover pt-12" src="/img/skills/php.png" title="PHP" alt="PHP logo"></p>
+          <p class="tecno iconsOpacity">jQuery<img class="float-on-hover" src="/img/skills/jquery.png" title="jQuery" alt="jQuery logo"></p>
+        </div>
+
+    </section>
+
+    <section class="reveal fade-left">
+      <h2 lang="en" class="subtitle">Contact me!</h2>
+      <h2 lang="es" class="subtitle">¡Contactame!</h2>
+      <div class="Contacts">
+        <a target="_blank" href="mailto:lisandrocostamartorel@gmail.com" class="float-on-hover">
+          <i class="fa-solid fa-square-envelope"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/lisandrocosta/" class="float-on-hover">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/Lisandr37616978" class="float-on-hover">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/lisandrocosta1/" class="float-on-hover">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/lisandro.costa.37/" class="float-on-hover">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a target="_blank" href="https://wa.link/92vssc" class="float-on-hover">
+          <i class="fab fa-whatsapp-square"></i>
+        </a>
+      </div>
+    </section>
+    <button id="upButton" class="upButton sideButtons">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </main> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="particles-copy.js"></script>
+  <script src="app.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
