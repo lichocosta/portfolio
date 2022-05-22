@@ -99,7 +99,8 @@
 
 .blog-card .details .date,
 .blog-card .details .author {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   color: #000;
   padding: 8px;
   background: #fff;
