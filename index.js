@@ -71,7 +71,7 @@ const proyectCards = document.querySelectorAll("li");
 showAllButton.addEventListener('click', () => {
   proyectCards.forEach(proyect => {
     proyect.classList.remove('d-none');
-    proyect.classList.add('fade-up');
+    proyect.classList.add('fade-right');
     proyect.classList.add('active');
   });
   showAllButton.classList.add('d-none');
