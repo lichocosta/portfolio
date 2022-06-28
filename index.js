@@ -34,17 +34,17 @@ function changeLenguage() {
 }
 lenguageButton.addEventListener('click', changeLenguage);
 
-//-------------AGE-------------//
-function getAge(dateString) {
-  const today = new Date();
-  const birthDate = new Date(dateString);
-  let age = today.getFullYear() - birthDate.getFullYear();
-  let m = today.getMonth() - birthDate.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
-  return age;
-}
-document.querySelectorAll('.age')[0].textContent = getAge('1997/04/07');
-document.querySelectorAll('.age')[1].textContent = getAge('1997/04/07');
+// //-------------AGE-------------//
+// function getAge(dateString) {
+//   const today = new Date();
+//   const birthDate = new Date(dateString);
+//   let age = today.getFullYear() - birthDate.getFullYear();
+//   let m = today.getMonth() - birthDate.getMonth();
+//   if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) age--;
+//   return age;
+// }
+// document.querySelectorAll('.age')[0].textContent = getAge('1997/04/07');
+// document.querySelectorAll('.age')[1].textContent = getAge('1997/04/07');
 
 //------SCROLL-KEYFRAMES------//
 function reveal() {

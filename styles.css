@@ -195,7 +195,8 @@ section:first-of-type {
   color: var(--text-color);
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .paragraph {
@@ -270,6 +271,10 @@ ul {
 
 .pt-12 {
   padding-top: 12px;
+}
+
+.pt-3em {
+  padding-top: 3em;
 }
 
 .iconsContainer img {
