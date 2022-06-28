@@ -181,6 +181,7 @@ section:first-of-type {
   overflow: hidden;
   z-index: 0;
   padding: 2rem;
+  min-width: 650px;
 }
 
 .subtitle {
