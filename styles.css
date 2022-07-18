@@ -274,10 +274,6 @@ ul {
   padding-top: 12px;
 }
 
-.pt-3em {
-  padding-top: 3em;
-}
-
 .iconsContainer img {
   margin: 0.5em;
   width: 48px;
@@ -298,6 +294,19 @@ ul {
   line-height: 20px;
   margin: 0 14px;
   color: var(--color-dark);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 3em;
+  font-size: 1.4rem;
+}
+
+.fa-location-dot {
+  color: rgb(204, 6, 6);
 }
 
 .float-on-hover {
@@ -333,9 +342,6 @@ ul {
   .glassStyle {
     margin-bottom: 2rem;
   }
-  /* .iconsContainer {
-    grid-template-columns: repeat(4, 1fr);
-  } */
 }
 
 @media (max-width: 730px) {
