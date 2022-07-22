@@ -213,7 +213,6 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
   gap: 20px;
-  padding: 1rem;
 }
 
 .btnShow {
@@ -350,6 +349,12 @@ ul {
   }
   main {
     gap: 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .glassStyle {
+    min-width: initial;
   }
 }
 
