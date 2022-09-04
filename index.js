@@ -1,16 +1,23 @@
 //-------------DARK-MODE-------------//
 const themeButton = document.querySelector('.theme-button');
+const wordpressIcon = document.querySelector('#wordpress');
 let isDark = localStorage.getItem('isDark');
 if (isDark) {
   isDark = isDark == 'true';
+  wordpressIcon.classList.remove('invert');
 } else {
   isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  wordpressIcon.classList.add('invert');
 }
 document.body.classList.toggle('dark', isDark);
 function toggleDarkTheme() {
   isDark = !isDark;
   document.body.classList.toggle('dark', isDark);
   localStorage.setItem('isDark', isDark);
+  wordpressIcon.classList.remove('invert');
+  if (isDark == true) {
+    wordpressIcon.classList.add('invert');
+  }
 }
 themeButton.addEventListener('click', toggleDarkTheme);
 

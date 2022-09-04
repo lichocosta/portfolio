@@ -242,6 +242,13 @@ ul {
   margin-left: 1rem;
 }
 
+h6 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+}
+
 .iconsContainer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -262,21 +269,22 @@ ul {
   color: var(--link-color);
 }
 
-.p-3 {
-  padding: 3px;
-}
-
 .pt-5 {
   padding-top: 5px;
 }
 
-.pt-12 {
-  padding-top: 12px;
+.invert {
+  filter: invert(1);
 }
 
 .iconsContainer img {
   margin: 0.5em;
-  width: 48px;
+  width: 45px;
+  max-height: 45px;
+}
+
+.p-3 {
+  padding: 3px;
 }
 
 .iconsOpacity {
