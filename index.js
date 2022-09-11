@@ -1,45 +1,45 @@
 //-------------DARK-MODE-------------//
-const themeButton = document.querySelector('.theme-button');
-const wordpressIcon = document.querySelector('#wordpress');
-let isDark = localStorage.getItem('isDark');
+const themeButton = document.querySelector(".theme-button");
+const wordpressIcon = document.querySelector("#wordpress");
+let isDark = localStorage.getItem("isDark");
 if (isDark) {
-  isDark = isDark == 'true';
-  wordpressIcon.classList.remove('invert');
+  isDark = isDark == "true";
+  wordpressIcon.classList.remove("invert");
 } else {
-  isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  wordpressIcon.classList.add('invert');
+  isDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  wordpressIcon.classList.add("invert");
 }
-document.body.classList.toggle('dark', isDark);
+document.body.classList.toggle("dark", isDark);
 function toggleDarkTheme() {
   isDark = !isDark;
-  document.body.classList.toggle('dark', isDark);
-  localStorage.setItem('isDark', isDark);
-  wordpressIcon.classList.remove('invert');
+  document.body.classList.toggle("dark", isDark);
+  localStorage.setItem("isDark", isDark);
+  wordpressIcon.classList.remove("invert");
   if (isDark == true) {
-    wordpressIcon.classList.add('invert');
+    wordpressIcon.classList.add("invert");
   }
 }
-themeButton.addEventListener('click', toggleDarkTheme);
+themeButton.addEventListener("click", toggleDarkTheme);
 
 //-------------LENGUAGE-------------//
-const lenguageButton = document.querySelector('.lenguage-button');
+const lenguageButton = document.querySelector(".lenguage-button");
 
 const englishElements = document.body.querySelectorAll('[lang="en"]');
 const spanishElements = document.body.querySelectorAll('[lang="es"]');
 
-spanishElements.forEach(element => {
-  element.classList.add('d-none');
+spanishElements.forEach((element) => {
+  element.classList.add("d-none");
 });
 
 function changeLenguage() {
-  englishElements.forEach(element => {
-    element.classList.toggle('d-none');
+  englishElements.forEach((element) => {
+    element.classList.toggle("d-none");
   });
-  spanishElements.forEach(element => {
-    element.classList.toggle('d-none');
+  spanishElements.forEach((element) => {
+    element.classList.toggle("d-none");
   });
 }
-lenguageButton.addEventListener('click', changeLenguage);
+lenguageButton.addEventListener("click", changeLenguage);
 
 // //-------------AGE-------------//
 // function getAge(dateString) {
@@ -72,21 +72,20 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 //--------SHOW-PROJECTS-------//
-const showAllButton = document.getElementById('showAllButton');
+const showAllButton = document.getElementById("showAllButton");
 const proyectCards = document.querySelectorAll("li");
 
-showAllButton.addEventListener('click', () => {
-  proyectCards.forEach(proyect => {
-    proyect.classList.remove('d-none');
-    proyect.classList.add('fade-right');
-    proyect.classList.add('active');
+showAllButton.addEventListener("click", () => {
+  proyectCards.forEach((proyect) => {
+    proyect.classList.remove("d-none");
+    proyect.classList.add("fade-right");
+    proyect.classList.add("active");
   });
-  showAllButton.classList.add('d-none');
+  showAllButton.classList.add("d-none");
 });
 
+const upButton = document.getElementById("upButton");
 
-const upButton = document.getElementById('upButton');
-
-upButton.addEventListener('click', () => {
+upButton.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
