@@ -183,6 +183,7 @@ section:first-of-type {
   z-index: 2;
   padding: 2rem;
   min-width: 650px;
+  max-width: 750px;
 }
 
 .subtitle {
@@ -306,16 +307,21 @@ h6 {
 }
 
 .location {
+  z-index: 4;
+  padding-top: 3em;
+}
+.location a {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding-top: 3em;
   font-size: 1.4rem;
+  cursor: pointer;
 }
 
 .fa-location-dot {
   color: rgb(204, 6, 6);
+  cursor: url(img/skills/flamenco.png), pointer;
 }
 
 .float-on-hover {
@@ -331,18 +337,6 @@ h6 {
 }
 .fa-linkedin:hover {
   color: #0e76a8;
-}
-.fa-twitter-square:hover {
-  color: #00acee;
-}
-.fa-instagram-square:hover {
-  color: #E1306C;
-}
-.fa-facebook-square:hover {
-  color: #4267B2;
-}
-.fa-whatsapp-square:hover {
-  color: #4FCE5D;
 }
 
 /*-----------------MEDIA QUERIES-----------------*/
